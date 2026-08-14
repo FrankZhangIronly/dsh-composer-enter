@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Cache
+.npm-cache/
+
+# Logs
+*.log
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build artifacts (this package is shipped as ESM source; no build step)
+dist/
+build/
+*.tsbuildinfo

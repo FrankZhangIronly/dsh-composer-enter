@@ -1,0 +1,11 @@
+# dsh-composer-enter bundle patch: adds the composer-enter row to the
+# host composition. The host half registers the user-settings namespace
+# `ui-composer-enter` (sendCombo / newlineCombo / steerCombo) via the optional
+# `settings` service, and owns a loopback RPC channel (/composer-enter) that
+# reads/writes the namespace directly through the host settings service —
+# bypassing the browser settings boundary (WEB_SETTINGS_NAMESPACES), so the
+# value persists to <dsh home>/settings.yaml and external file edits apply.
+- insert:
+    - id: composer-enter
+      name: dsh-composer-enter
+      inject: [connection]
