@@ -4,6 +4,8 @@
 
 The plugin is shipped as a **two-sided DSH plugin**: a host (Node) half that owns the settings namespace and a loopback RPC channel, and a browser half that renders the key-mapping row in *Settings → General* and intercepts Enter at the document capture phase.
 
+> 🌏 **[中文版本 / Chinese version](./README.zh-CN.md)** is also available.
+
 ---
 
 ## Features
